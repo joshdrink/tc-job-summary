@@ -5,7 +5,7 @@
     <head>
 
         {# Site Title #}
-        <title>Clone: Playground</title>
+        <title>Talent Cloud: Job Summary</title>
         
         {# Charset #}
         <meta charset="utf-8" />
@@ -50,16 +50,213 @@
     {# Playground's Body #}
     <body data-clone>
 
-        <div class="pg-hero">
-            <div data-c-radius="rounded">
-                <div data-c-background="black(100)" data-c-color="white" data-c-padding="all(double)">
-                    <h1 data-c-font-size="h1" data-c-margin="bottom(normal)" data-c-font-weight="bold">Welcome to Clone Playground!</h1>
-                    <p data-c-margin="bottom(half)">Playground gives you access to everything you need to have some fun prototyping things with Clone. You can stick to regular HTML, or you can dive into the deep end and build some fun stuff with JavaScript, Sass, and Twig.</p>
-                    <p>Take a peek inside <span data-c-font="mono">app/twig/index.twig</span> to get started!</p>
+        <div data-c-overlay="black(90)" data-c-padding="tb(triple)" style="background-image: url('https://images.unsplash.com/photo-1556742400-b5b7c5121f99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');">
+            <div data-c-container="large" data-c-align="base(center) tl(left)">
+                <h1 data-c-font-size="h1" data-c-color="white"><span data-c-margin="right(normal)">CS1 - Junior Front-end Developer</span><span data-c-tag="c1" data-c-font-size="small" data-c-radius="pill" data-c-margin="right(normal)">In Review</span><a href="#activity" title="View new acitivity on this job action." data-c-tag="stop" data-c-font-size="small" data-c-radius="pill">New Activity (2)</a></h1>
+                <div data-c-color="white" data-c-margin="top(double)">
+                    <nav
+                        aria-label="breadcrumb"
+                        data-c-breadcrumbs>
+                        <ol>
+                            <li>
+                                <a
+                                    href="#link-to-page"
+                                    title="This is the title of the page link.">
+                                    Talent Cloud
+                                </a>
+                                <i class="material-icons">arrow_right</i>
+                            </li>
+                            <li>
+                                <a
+                                    href="#link-to-page"
+                                    title="This is the title of the page link.">
+                                    My Jobs
+                                </a>
+                                <i class="material-icons">arrow_right</i>
+                            </li>
+                            <li>
+                                <span aria-current="page">CS1 - Junior Front-end Developer</span>
+                                <i class="material-icons">arrow_right</i>
+                            </li>
+                        </ol>
+                    </nav>
                 </div>
-                <div class="pg-alert" data-c-color="white" data-c-padding="tb(normal) rl(double)">
-                    <p>Need a refresher on how to use Clone? <a href="https://designwithclone.ca/" title="Open the Clone documentation in a new window or tab." target="_blank">Check out the docs</a>.</p>
+            </div>
+        </div>
+
+        <div data-c-background="gray(10)">
+
+            <div data-c-container="large" data-c-padding="bottom(3)">
+
+                {# Summary #}
+                <h2 data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Job Summary</h2>
+                <div data-c-grid="gutter(all, 1)">
+                    <div data-c-grid-item="tl(1of3)" data-c-align="base(center)">
+                        <div data-c-background="c1(30)" data-c-border="all(thin, solid, c1)" data-c-padding="tb(.5) rl(1)" data-c-radius="rounded" data-c-color="c1">
+                            <p><span data-c-font-weight="bold">Time with You:</span> 2 Days</p>
+                        </div>
+                    </div>
+                    <div data-c-grid-item="tl(1of3)" data-c-align="base(center)">
+                        <div data-c-background="c1(30)" data-c-border="all(thin, solid, c1)" data-c-padding="tb(.5) rl(1)" data-c-radius="rounded" data-c-color="c1">
+                            <p><span data-c-font-weight="bold">Time with HR:</span> 3 Days</p>
+                        </div>
+                    </div>
+                    <div data-c-grid-item="tl(1of3)" data-c-align="base(center)">
+                        <div data-c-background="gray(30)" data-c-border="all(thin, solid, gray)" data-c-padding="tb(.5) rl(1)" data-c-radius="rounded" data-c-color="gray">
+                            <p><span data-c-font-weight="bold">Time with Talent Cloud:</span> N/A</p>
+                        </div>
+                    </div>
+                    <div data-c-grid-item="tl(1of2)">
+                        <div data-c-background="c1(30)" data-c-border="all(thin, solid, c1)" data-c-padding="all(1)" data-c-radius="rounded">
+                            <p>Hiring Manager: First Last</p>
+                            <p>HR Advisers: First Last, First Last</p>
+                            <p data-c-margin="top(.5)">PSC Process #: 12345</p>
+                            <p>Priority Clearance #: 12345</p>
+                            <p data-c-margin="top(.5)">Status: In Review</p>
+                        </div>
+                    </div>
+                    <div data-c-grid-item="tl(1of2)">
+                        <div data-c-background="c1(30)" data-c-border="all(thin, solid, c1)" data-c-padding="all(1)" data-c-radius="rounded">
+                            <p>Date Created: YYYY-MON-DD</p>
+                            <p>Date Published: YYYY-MON-DD</p>
+                            <p>Date Closed: YYYY-MON-DD</p>
+                            <p data-c-margin="top(.5)">Post-closed State: N/A</p>
+                            <p data-c-margin="top(.5)">Applicants: 12</p>
+                        </div>
+                    </div>
                 </div>
+
+                {# Tools #}
+                <h2 data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Tools</h2>
+                <div data-c-grid="gutter(all, 1)">
+                    <div data-c-grid-item="tp(1of2) tl(1of4)">
+                        <a class="tc-summary-action" href="" title="" data-c-card data-c-background="white(100)" data-c-radius="rounded">
+                            <div data-c-padding="tb(2) rl(1)" data-c-align="base(center)">
+                                {% include "icons/cogs.svg" with {"color": "c1"} %}
+                            </div>
+                            <div data-c-background="c1(100)" data-c-padding="tb(.5) rl(1)" data-c-align="base(center)">
+                                <span data-c-color="white">Edit Poster</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-c-grid-item="tp(1of2) tl(1of4)">
+                        <a class="tc-summary-action" href="" title="" data-c-card data-c-background="white(100)" data-c-radius="rounded">
+                            <div data-c-padding="tb(2) rl(1)" data-c-align="base(center)">
+                                {% include "icons/cogs.svg" with {"color": "c1"} %}
+                            </div>
+                            <div data-c-background="c1(100)" data-c-padding="tb(.5) rl(1)" data-c-align="base(center)">
+                                <span data-c-color="white">View Live Poster</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-c-grid-item="tp(1of2) tl(1of4)">
+                        <a class="tc-summary-action" href="" title="" data-c-card data-c-background="white(100)" data-c-radius="rounded">
+                            <div data-c-padding="tb(2) rl(1)" data-c-align="base(center)">
+                                {% include "icons/cogs.svg" with {"color": "c1"} %}
+                            </div>
+                            <div data-c-background="c1(100)" data-c-padding="tb(.5) rl(1)" data-c-align="base(center)">
+                                <span data-c-color="white">View Screening Plan</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-c-grid-item="tp(1of2) tl(1of4)">
+                        <a class="tc-summary-action" href="" title="" data-c-card data-c-background="white(100)" data-c-radius="rounded">
+                            <div data-c-padding="tb(2) rl(1)" data-c-align="base(center)">
+                                {% include "icons/cogs.svg" with {"color": "c1"} %}
+                            </div>
+                            <div data-c-background="c1(100)" data-c-padding="tb(.5) rl(1)" data-c-align="base(center)">
+                                <span data-c-color="white">View Applicants</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                {# Activity #}
+                <h2 data-c-font-size="h2" id="activity" data-c-padding="top(3) bottom(1)">Job Activity Feed</h2>
+                <div data-c-grid="gutter(all, 1)">
+                    <div data-c-grid-item="base(1of1)">
+                        <form data-c-grid="gutter(all, 1)">
+                            <div data-c-input="text" data-c-grid-item="tl(2of3)">
+                                <label for="TI2">Add a Comment</label>
+                                <span>Required</span>
+                                <div>
+                                    <input id="TI2" placeholder="e.g. Enter your question, recommendation, etc." required type="text" />
+                                </div>
+                                <span>This input has an error.</span>
+                            </div>
+                            <div data-c-input="select" data-c-grid-item="tl(1of3)">
+                                <label for="SEL2">Type of Comment</label>
+                                <span>Required</span>
+                                <div>
+                                    <i class="material-icons">
+                                        arrow_drop_down
+                                    </i>
+                                    <select required id="SEL2">
+                                        <option disabled selected>Select an option...</option>
+                                        <option>Question</option>
+                                        <option>Recommendation</option>
+                                        <option>Required Action</option>
+                                    </select>
+                                </div>
+                                <span>This input has an error.</span>
+                            </div>
+                            <div data-c-grid-item="base(1of1)" data-c-align="base(center) tl(right)">
+                                <button data-c-button="solid(c1)" data-c-radius="rounded">
+                                    Submit Comment
+                                </button>
+                            </div>
+                        </form>
+                        <div data-c-padding="top(2)">
+                            {# New Activity Banner #}
+                            <div data-c-padding="tb(1)" data-c-align="base(center)" class="tc-activity-divider--new">
+                                <span>New Activity (2)</span>
+                            </div>
+                            {# Activity Update UI #}
+                            <div data-c-card data-c-background="white(100)" data-c-radius="rounded" data-c-padding="all(1)" data-c-margin="bottom(.5)">
+                                <i class="material-icons" data-c-color="c3" style="height: 100%; display: inline-block; vertical-align: middle; margin-right: 1rem; margin-top: -.3rem;">alarm</i>
+                                <span>Example activity copy that emulates a new log.</span>
+                            </div>
+                            {# Comment UI #}
+                            <a class="tc-job-activity-comment" data-c-card data-c-background="white(100)" data-c-radius="rounded" data-c-padding="all(1)" data-c-margin="bottom(.5)">
+                                <p data-c-margin="bottom(1)" data-c-color="gray" data-c-font-size="small">Kelly Plummer (HR) commented today at 5:45PM.</p>
+                                <p data-c-margin="bottom(1)" data-c-color="black"><span data-c-font-weight="bold">Recommendation:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia sequi dignissimos, fugit molestias, quibusdam hic maxime sunt libero, ea deserunt numquam consectetur doloribus tempora sapiente? Corporis perspiciatis dolores deserunt.</p>
+                                <div data-c-grid="gutter(all, 1)">
+                                    <div data-c-grid-item="tp(1of2) ds(2of3)">
+                                        <p data-c-font-size="small" data-c-color="black">Comment Located: Job Poster Builder > Step 3: Tasks</p>
+                                    </div>
+                                    <div data-c-grid-item="tp(1of2) ds(1of3)" data-c-align="base(center) tp(right)">
+                                        <p data-c-font-size="small" data-c-font-style="underline" data-c-color="c1">View Comment</p>
+                                    </div>
+                                </div>
+                            </a>
+                            {# All Activity Banner #}
+                            <div data-c-padding="tb(1)" data-c-align="base(center)" class="tc-activity-divider--old">
+                                <span>Previous Activity</span>
+                            </div>
+                            {# Required Action UI #}
+                            <a class="tc-job-activity-comment" data-c-card data-c-background="white(100)" data-c-radius="rounded" data-c-padding="all(1)" data-c-margin="bottom(.5)" data-c-border="left(thick, solid, stop)">
+                                <p data-c-margin="bottom(1)" data-c-color="gray" data-c-font-size="small">Kelly Plummer (HR) commented today at 12:30PM.</p>
+                                <p data-c-margin="bottom(1)" data-c-color="black"><span data-c-font-weight="bold" data-c-color="stop">Required Action:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quia sequi dignissimos, fugit molestias, quibusdam hic maxime sunt libero, ea deserunt numquam consectetur doloribus tempora sapiente? Corporis perspiciatis dolores deserunt.</p>
+                                <div data-c-grid="gutter(all, 1)">
+                                    <div data-c-grid-item="tp(1of2) ds(2of3)">
+                                        <p data-c-font-size="small" data-c-color="black">Comment Located: Screening Plan</p>
+                                    </div>
+                                    <div data-c-grid-item="tp(1of2) ds(1of3)" data-c-align="base(center) tp(right)">
+                                        <p data-c-font-size="small" data-c-font-style="underline" data-c-color="c1">View Comment</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-c-background="black(100)" data-c-padding="tb(triple)">
+            <div data-c-container="large" data-c-align="base(center)">
+                <h1 data-c-font-size="h2" data-c-font-weight="bold" data-c-color="white">FOOTER</h1>
             </div>
         </div>
 
