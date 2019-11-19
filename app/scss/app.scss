@@ -120,6 +120,7 @@ $clone-grid-gutter: $clone-padding;
     .tc-summary-action {
         color: white;
         display: block;
+        text-decoration: none;
         transition: all .2s ease;
         &:hover {
             box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
@@ -129,6 +130,10 @@ $clone-grid-gutter: $clone-padding;
         svg {
             max-width: 6rem;
         }
+    }
+    .tc-job-activity+[class*="tc-activity-divider"],
+    .tc-job-activity-comment+[class*="tc-activity-divider"]{
+        margin-top: -1rem;
     }
     [class*="tc-activity-divider"] {
         position: relative;
@@ -140,7 +145,7 @@ $clone-grid-gutter: $clone-padding;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 50%;
+            width: 75%;
             z-index: 1;
         }
         span {
@@ -159,8 +164,23 @@ $clone-grid-gutter: $clone-padding;
         }
         &[class*="--old"] {
             &::before {
-                background: $clone-black;
+                background: $clone-c1;
             }
+            span {
+                color: $clone-c1;
+            }
+        }
+    }
+    .tc-job-activity {
+        i {
+            display: inline-block;
+            height: 100%; 
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        span {
+            display: inline-block;
+            transform: translate(0, .1rem);
         }
     }
     .tc-job-activity-comment {
