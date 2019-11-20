@@ -117,6 +117,22 @@ $clone-grid-gutter: $clone-padding;
 
 [data-clone] {
     // Your custom CSS goes here.
+    .sidebar-wrapper {
+        position: relative;
+    }
+    .sidebar {
+        position: sticky;
+        top: 0;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+    .summary {
+        [data-c-button] {
+            width: 100% !important;
+        }
+    }
     .tc-summary-action {
         color: white;
         display: block;
