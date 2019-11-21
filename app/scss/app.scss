@@ -188,6 +188,18 @@ $clone-grid-gutter: $clone-padding;
         }
     }
     .tc-job-activity {
+        border: none;
+        cursor: pointer;
+        font-size: $clone-default-font-size;
+        outline: none;
+        text-align: left;
+        transition: all .2s ease;
+        width: 100%;
+        &:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+            transform: scale(1.05);
+            transition: all .2s ease;
+        }
         i {
             display: inline-block;
             height: 100%; 
