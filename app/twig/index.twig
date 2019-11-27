@@ -93,8 +93,8 @@
                             <span data-c-font-weight="bold" data-c-font-size="h4">On This Page:</span>
                             <nav data-c-margin="top(normal)">
                                 <ul>
-                                    <li><a href="#summary" title="">Job Summary</a></li>
-                                    <li><a href="#tools" title="">Tools</a></li>
+                                    <li><a href="#summary" title="">Job Status</a></li>
+                                    <li><a href="#tools" title="">Poster &amp; Screening Tools</a></li>
                                     <li><a href="#activity" title="">Activity (2)</a></li>
                                 </ul>
                             </nav>
@@ -103,19 +103,19 @@
                     <div data-c-grid-item="tl(3of4) ds(4of5)">
 
                         {# Summary #}
-                        <h2 id="summary" data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Job Summary</h2>
+                        <h2 id="summary" data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Job Status</h2>
                         <p data-c-margin="bottom(1)">
-                            <span data-c-color="c1" data-c-font-weight="600">Time with Manager:</span> 2 Days
+                            <span class="tc-timer" data-c-font-weight="600"><i class="material-icons">pause_circle_filled</i>Time with Manager: 2 Days</span>
                             &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <span data-c-color="c1" data-c-font-weight="600">Time with You:</span> 3 Days
+                            <span class="tc-timer active" data-c-font-weight="600"><i class="material-icons">access_time</i> Time with You: 3 Days</span>
                             &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <span data-c-color="c1" data-c-font-weight="600">Time with Talent Cloud:</span> N/A
+                            <span class="tc-timer" data-c-font-weight="600"><i class="material-icons">pause_circle_filled</i>Time with Talent Cloud: N/A</span>
                         </p>
                         <div class="summary" data-c-grid="gutter(all, 1)">
                             <div data-c-grid-item="tl(2of3)">
                                 <div data-c-card data-c-background="white(100)" data-c-padding="all(1)" data-c-radius="rounded" data-c-margin="bottom(1)">
                                     <p data-c-margin="bottom(.25)"><span data-c-font-weight="600" data-c-color="c2">Current Status:</span> In Review</p>
-                                    <p data-c-margin="bottom(.5)">This job action is current in the review process. This means that the poster is being edited and discussed by the manager and HR advisers to get it to a point where it can be published. When it's ready, the next step is translation.</p>
+                                    <p data-c-margin="bottom(.5)">This job action is currently in the review process. This means that the poster is being edited and discussed by the manager and HR advisers to get it to a point where it can be published. When it's ready, the next step is translation.</p>
                                     {# Note: managers see HR advisers, HR advisers see managers AND HR advisers. #}
                                     <p data-c-margin="bottom(.5)"><span data-c-font-weight="600" data-c-color="c2">Hiring Manager:</span> First Last</p>
                                     <p><span data-c-font-weight="600" data-c-color="c2">Applicants:</span> N/A</p>
@@ -185,13 +185,13 @@
                                 </div>
                                 {# Note: only HR Advisers see this. #}
                                 <div data-c-card data-c-background="white(100)" data-c-padding="all(1)" data-c-radius="rounded" data-c-margin="top(1)">
-                                    <button data-c-button="outline(stop)" data-c-radius="rounded">Unclaim</button>
+                                    <button data-c-button="outline(stop)" data-c-radius="rounded">Relinquish</button>
                                 </div>
                             </div>
                         </div>
 
                         {# Tools #}
-                        <h2 id="tools" data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Tools</h2>
+                        <h2 id="tools" data-c-font-size="h2" data-c-padding="top(3) bottom(1)">Poster &amp; Screening Tools</h2>
                         <div data-c-grid="gutter(all, 1)">
                             <div data-c-grid-item="tp(1of2) tl(1of4)">
                                 <a class="tc-summary-action" href="" title="" data-c-card data-c-background="white(100)" data-c-radius="rounded">

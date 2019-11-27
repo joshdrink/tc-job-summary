@@ -133,6 +133,20 @@ $clone-grid-gutter: $clone-padding;
             width: 100% !important;
         }
     }
+    .tc-timer {
+        i {
+            color: $clone-gray;
+            margin-top: -.15rem;
+            margin-right: .3rem;
+            vertical-align: middle;
+        }
+        &.active {
+            color: $clone-c2;
+            i {
+                color: $clone-c2;
+            }
+        }
+    }
     .tc-summary-action {
         color: white;
         display: block;
