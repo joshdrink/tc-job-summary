@@ -144,6 +144,7 @@ $clone-grid-gutter: $clone-padding;
             color: $clone-c2;
             i {
                 color: $clone-c2;
+                animation: pulse 1s ease infinite;
             }
         }
     }
@@ -235,5 +236,10 @@ $clone-grid-gutter: $clone-padding;
             transform: scale(1.05);
             transition: all .2s ease;
         }
+    }
+    @keyframes pulse {
+        0%   {opacity: 1}
+        50%  {opacity: .3}
+        100% {opacity: 1}
     }
 }
