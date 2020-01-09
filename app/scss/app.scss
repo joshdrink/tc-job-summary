@@ -243,3 +243,26 @@ $clone-grid-gutter: $clone-padding;
         100% {opacity: 1}
     }
 }
+
+/* Whitespace (Margins & Padding)
+/* These variables assign a default value to margins and padding (in a mobile first perspective), as well as how those values scale. */
+:root {
+    --gc-margin-default: 1rem;
+    --gc-padding-default: 1rem;
+    /* The multiplier that is used in our media query calculations to ensure consistency in scale as the device's screen grows. */
+    --gc-whitespace-multiplier: 1.4;
+    /* Now we set the values for usage. */
+    --gc-margin-value: var(--gd-margin-default, var(--gc-margin-default));
+    --gc-padding-value: var(--gd-margin-default, var(--gc-margin-default));
+}
+/* Example: */
+/* First, we set how we want the margin value to change in each of our media queries. To do this, we use the default value in a calc function to multiple or divide it by our whitespace multiplier, which then sets the value variable to our new value for that media query. */
+@media screen and (min-width: 40rem) {
+    :root {
+        --gc-margin-value: calc(var(--gd-margin-default, var(--gc-margin-default)) * var(--gd-whitespace-multiplier, var(--gc-whitespace-multiplier)));
+    }
+}
+/* This value is now 1rem until the device is 40rem wide, at which point is becomes 1*1.4. */
+.margin-left {
+    margin-left: var(--gd-margin-value, var(--gc-margin-value));
+}
